@@ -1,0 +1,19 @@
+<h1>Create User</h1>
+
+<input type="text" (input)="onNameInput($event.target.value)">
+<input type="text" (input)="onJobInput($event.target.value)">
+
+<input
+  type="button"
+  value="Create User"
+  (click)="onCreateClick($event)"
+  [disabled]="buttonIsDisabled"
+>
+
+<div *ngIf="isLoading === true">Loading</div>
+
+<div *ngFor="let a of array">{{a}}</div>
+
+<div *ngIf="!isLoading && response">
+  {{response}}
+</div>

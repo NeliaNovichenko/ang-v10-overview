@@ -1,0 +1,22 @@
+<a href="https://www.youtube.com/watch?v=I6ZvpdRM1eQ&list=PL18cI3TmfldZh-LRbu5Uc-rDvoYlyGLqz&index=3">Increasing Performance - more than a pipe dream</a>
+<a href="https://angular.io/guide/pipes">Pure/impure pipes</a>
+<div>
+    <h2>Build in pipes: </h2>
+    <p>My birthday is {{ birthday | date:"MM/dd/yy" }} </p>
+    <p>{{ 'My birthday is' | uppercase }} </p>
+</div>
+
+<div>
+    <h2>My reverseStr pipe</h2>
+    <p>{{'I am nelia'}}</p>
+    <p>reverseStr: {{'I am nelia' | reverseStr}}</p>
+    <p>reverseStr: {{'I am nelia' | reverseStr | uppercase }}</p>
+    <p>reverseStr2: {{'I am nelia' | reverseStr | reverseStr}}</p>
+</div>
+
+<div>
+    <h2>My pipe with params</h2>
+    <p>{{'I am nelia'}}</p>
+    <p>{{'I am nelia' | testWithParams:'before' : 'after'}}</p>
+    <p>{{'+' | testWithParams: '1' : '2'}}</p>
+</div>

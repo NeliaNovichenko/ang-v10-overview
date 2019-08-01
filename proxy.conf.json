@@ -1,0 +1,10 @@
+{
+  "/process-file.json/*": {
+    "target": "https://apicloud-facemark.p.rapidapi.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/process-file.json": "https://apicloud-facemark.p.rapidapi.com/process-file.json"
+    }
+  }
+}

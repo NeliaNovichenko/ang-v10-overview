@@ -1,0 +1,17 @@
+<div #nonStaticDiv></div>
+<div #staticDiv></div>
+
+<button (click)="handleClick()">Click me</button>
+
+
+<ng-container *ngIf="countClick % 2; then oddNumber; else evenNumber"></ng-container>
+
+<ng-template #evenNumber>
+    <div>Hello from even template</div>
+    <p>{{countClick}}</p>
+</ng-template>
+
+<ng-template #oddNumber>
+    <div>Hello from odd template</div>
+    <p>{{countClick}}</p>
+</ng-template>

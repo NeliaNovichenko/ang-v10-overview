@@ -1,0 +1,32 @@
+<div>
+  <div class="input-group upload-block my-2">
+    <div class="custom-file">
+      <input
+        type="file"
+        accept="image/*"
+        class="custom-file-input"
+        id="inputImage"
+        (change)="onFileUpload($event)"
+      />
+      <label class="custom-file-label" for="inputImage">{{
+        image ? image.name : "Choose file"
+      }}</label>
+    </div>
+    <div class="input-group-append">
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        [disabled]="!image"
+        (click)="sendImage()"
+      >
+        Find faces
+      </button>
+    </div>
+  </div>
+
+  <div class="d-table">
+    <div class="d-inline-block">
+      <img #imagePreview width="300" />
+    </div>    
+  </div>
+</div>

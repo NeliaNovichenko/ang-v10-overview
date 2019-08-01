@@ -1,0 +1,8 @@
+<p highlightTest>directive-example works!</p>
+
+<p highlightTest [highlightColor]="'black'">directive-example black works!</p>
+<p highlightTest highlightColor="black">directive-example black works!</p>
+
+
+<input #color>
+<button (click)="changeColor(color.value)">Change Color</button>

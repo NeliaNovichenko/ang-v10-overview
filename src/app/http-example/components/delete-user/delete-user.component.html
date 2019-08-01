@@ -1,0 +1,16 @@
+<h1>Delete User</h1>
+
+<input type="number" (input)="onIdInput($event.target.value)">
+
+<input
+  type="button"
+  value="Delete User"
+  (click)="onDeleteClick()"
+  [disabled]="buttonIsDisabled"
+>
+
+<div *ngIf="isLoading">Loading...</div>
+
+<div *ngIf="!isLoading && isDeleted">
+  User is deleted
+</div>

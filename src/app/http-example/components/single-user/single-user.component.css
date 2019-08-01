@@ -1,0 +1,11 @@
+.user-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  margin-right: 8px;
+}
