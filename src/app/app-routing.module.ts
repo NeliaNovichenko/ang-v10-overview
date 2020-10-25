@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PipesExampleComponent } from './pipe-example/pipes-example-component/pipes-example.component';
 
 
 const routes: Routes = [
-  // {
-  //   path: 'face-rect',
-  //   loadChildren: () => import(`./face-rect-example/face-rect-example.module`).then(m => m.FaceRectExampleModule),
-  //   data: { title: 'FaceRect Example' }
-  // },
   {
     path: 'http-example',
     loadChildren: () => import(`./http-example/http-example.module`).then(m => m.HttpExampleModule),
     data: { title: 'Http Example' }
   },
   {
+    // path: 'pipes/{:id}',
+    // component: PipesExampleComponent
     path: 'pipes',
     loadChildren: () => import(`./pipe-example/pipe-example.module`).then(m => m.PipeExampleModule),
     data: { title: 'Pipes Example' }

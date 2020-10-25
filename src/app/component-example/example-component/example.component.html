@@ -3,6 +3,11 @@
 
 <button (click)="handleClick()">Click me</button>
 
+<!-- <div *ngFor="let pr of products">
+    <app-child [p]="pr" [size]="i % 4 ? 400 : 200" (clicked)="childClicked(p)"></app-child>
+</div> -->
+
+<!-- <div *ngIf="true; else evenNumber"></div> -->
 
 <ng-container *ngIf="countClick % 2; then oddNumber; else evenNumber"></ng-container>
 
@@ -15,3 +20,4 @@
     <div>Hello from odd template</div>
     <p>{{countClick}}</p>
 </ng-template>
+

@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'testWithParams'
+  name: 'testWithParams',
+  pure: true
 })
 export class TestWithParamsPipe implements PipeTransform {
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { User } from '../../models/user';
-import { map, filter, tap } from 'rxjs/operators';
+import { map, filter, tap, take } from 'rxjs/operators';
 import { ReqResService } from '../../services/req-res.service';
 import { UsersPage } from '../../models/users-page';
 
@@ -22,14 +22,16 @@ export class ListUsersComponent {
       .pipe(
         filter(users => !!users),
         tap(console.log)
-      ).subscribe((p: UsersPage) => {
+    )
+      .subscribe((p: UsersPage) => {
       this.isLoading = false;
       this.users.push(...p.data);
       this.page++;
     },
       e => {
         console.log(e);
-      },
+        },
+      console.log
     );
   }
 }

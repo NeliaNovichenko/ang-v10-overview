@@ -26,6 +26,7 @@ export class DeleteUserComponent {
     this.service.deleteUser(this.userId).subscribe(() => {
       this.isLoading = false;
       this.isDeleted = true;
-    });
+    }
+    );
   }
 }
