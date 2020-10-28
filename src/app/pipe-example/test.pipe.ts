@@ -12,5 +12,4 @@ export class TestPipe implements PipeTransform {
     }
     return newStr;
   }
-
 }

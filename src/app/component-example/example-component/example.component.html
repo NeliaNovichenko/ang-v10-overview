@@ -1,14 +1,17 @@
+<!-- child component -->
+<div *ngFor="let pr of products">
+    <app-child [p]="pr" [size]="i % 4 ? 400 : 200" (clicked)="childClicked($event)"></app-child>
+</div>
+
+<!-- name element -->
 <div #nonStaticDiv></div>
 <div #staticDiv></div>
 
-<button (click)="handleClick()">Click me</button>
+<button (click)="handleClick($event)">Click me</button>
 
-<!-- <div *ngFor="let pr of products">
-    <app-child [p]="pr" [size]="i % 4 ? 400 : 200" (clicked)="childClicked(p)"></app-child>
-</div> -->
 
+<!-- Structural directives -->
 <!-- <div *ngIf="true; else evenNumber"></div> -->
-
 <ng-container *ngIf="countClick % 2; then oddNumber; else evenNumber"></ng-container>
 
 <ng-template #evenNumber>

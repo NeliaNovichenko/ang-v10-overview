@@ -1,9 +1,12 @@
-<a href="https://www.youtube.com/watch?v=I6ZvpdRM1eQ&list=PL18cI3TmfldZh-LRbu5Uc-rDvoYlyGLqz&index=3">Increasing Performance - more than a pipe dream</a>
-<a href="https://angular.io/guide/pipes">Pure/impure pipes</a>
+<p><a href="https://www.youtube.com/watch?v=I6ZvpdRM1eQ&list=PL18cI3TmfldZh-LRbu5Uc-rDvoYlyGLqz&index=3">Increasing Performance - more than a pipe dream</a></p>
+<p><a href="https://angular.io/guide/pipes">Pure/impure pipes</a></p>
 <div>
     <h2>Build in pipes: </h2>
     <p>My birthday is {{ birthday | date:"short" }} </p>
     <p>{{ 'My birthday is' | uppercase }} </p>
+
+    <!-- What is the difference between pipe and method? -->
+    <p>{{ toUpper('My birthday is') }} </p>
 </div>
 
 <div>

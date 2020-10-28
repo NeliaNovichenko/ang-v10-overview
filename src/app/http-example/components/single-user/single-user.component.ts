@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component } from '@angular/core';
 import { ReqResService } from '../../services/req-res.service';
 import { User } from '../../models/user';
 

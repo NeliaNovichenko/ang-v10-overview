@@ -10,7 +10,7 @@ const routes: Routes = [
     data: { title: 'Http Example' }
   },
   {
-    // path: 'pipes/{:id}',
+    // path: 'pipes',
     // component: PipesExampleComponent
     path: 'pipes',
     loadChildren: () => import(`./pipe-example/pipe-example.module`).then(m => m.PipeExampleModule),
@@ -20,11 +20,6 @@ const routes: Routes = [
     path: 'directives',
     loadChildren: () => import(`./directive-example/directive-example.module`).then(m => m.DirectiveExampleModule),
     data: { title: 'Directives Example' }
-  },
-  {
-    path: 'observables',
-    loadChildren: () => import(`./observable-example/observable-example.module`).then(m => m.ObservableExampleModule),
-    data: { title: 'Observables Example' }
   },
   {
     path: 'components',
