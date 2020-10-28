@@ -4,7 +4,8 @@ import { Component, OnInit, AfterViewInit, AfterContentInit, AfterContentChecked
 @Component({
   selector: 'app-example',
   templateUrl: './example.component.html',
-  styleUrls: ['./example.component.scss']
+  styleUrls: ['./example.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class ExampleComponent implements
   OnChanges,

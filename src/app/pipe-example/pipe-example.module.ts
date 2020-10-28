@@ -7,6 +7,7 @@ import { TestWithParamsPipe } from './test-with-params.pipe';
 
 const routes: Routes = [
   { path: '', component: PipesExampleComponent }
+
 ];
 
 @NgModule({
